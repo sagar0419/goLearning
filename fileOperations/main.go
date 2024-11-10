@@ -37,12 +37,12 @@ func createFile(s string) {
 }
 
 // Reading a existing file
-func readFile() {
+func readFile(s string) {
 	fmt.Println("Read Operation")
 	fmt.Println("Reading the previously created file")
 
 	// Reading a file
-	content, err := os.ReadFile(sagar)
+	content, err := os.ReadFile(s)
 	if err != nil {
 		log.Fatal(err)
 		return
@@ -51,12 +51,12 @@ func readFile() {
 }
 
 // Appending a existing file
-func appendFile() {
+func appendFile(s string) {
 	fmt.Println("Updating file")
 	fmt.Println("Updating the previously created file")
 
 	// opening file to append
-	file, err := os.OpenFile(sagar, os.O_APPEND|os.O_WRONLY, 0644)
+	file, err := os.OpenFile(s, os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -69,7 +69,7 @@ func appendFile() {
 		return
 	}
 
-	newContent, err := os.ReadFile(sagar)
+	newContent, err := os.ReadFile(s)
 	if err != nil {
 		log.Fatal(err)
 		return
@@ -79,7 +79,7 @@ func appendFile() {
 
 // Read a remote file
 
-func remoteRead() {
+func remoteRead(s string) {
 	fmt.Printf("Reading this remote url %s", url)
 
 	// accessing a URL
@@ -102,7 +102,7 @@ func remoteRead() {
 	fmt.Printf("Content of the file is \n\n %s\n\n this content is also written in the file named %s\n", string(content), gitFile)
 
 	// Creating a file and writing the upstream content to it
-	file, err := os.Create(gitFile)
+	file, err := os.Create(s)
 	if err != nil {
 		log.Fatal("error occured : ", err)
 		return
@@ -118,7 +118,7 @@ func remoteRead() {
 
 func main() {
 	createFile(sagar)
-	readFile()
-	appendFile()
-	remoteRead()
+	readFile(sagar)
+	appendFile(sagar)
+	remoteRead(gitFile)
 }
