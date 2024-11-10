@@ -79,7 +79,7 @@ func appendFile(s string) {
 
 // Read a remote file
 
-func remoteRead(s string) {
+func remoteRead(s, url string) {
 	fmt.Printf("Reading this remote url %s", url)
 
 	// accessing a URL
@@ -120,5 +120,5 @@ func main() {
 	createFile(sagar)
 	readFile(sagar)
 	appendFile(sagar)
-	remoteRead(gitFile)
+	remoteRead(gitFile, url)
 }
