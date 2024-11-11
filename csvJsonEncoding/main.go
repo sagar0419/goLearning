@@ -5,5 +5,6 @@ import (
 )
 
 func main() {
-	csv.Csv("timezone.csv")
+	csv.ReadCsv("timezone.csv")
+	csv.WriteCsv("timezone.csv")
 }
