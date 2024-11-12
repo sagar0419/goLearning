@@ -45,6 +45,7 @@ func DecodeJson() {
 	fmt.Printf("Name: %s, Age: %d, Department: %s\n", emp.Name, emp.Age, emp.Department)
 }
 
+// Reading JSON file
 func ReadJson(jsonFile string) {
 
 	file, err := os.ReadFile(jsonFile)
@@ -56,6 +57,7 @@ func ReadJson(jsonFile string) {
 	fmt.Printf("\nThe content of the JSON file is below.\n\n%s\n", file)
 }
 
+// Writing to JSON file
 func WriteJson(jsonFile string) {
 	file, err := os.OpenFile(jsonFile, os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
@@ -64,7 +66,10 @@ func WriteJson(jsonFile string) {
 	}
 	defer file.Close()
 
+	// adding new line at the end of existing json file before appending data
 	line := "\n" + newEmployee
+
+	// Writing data
 	_, err = file.WriteString(line)
 	if err != nil {
 		log.Fatal(err)
