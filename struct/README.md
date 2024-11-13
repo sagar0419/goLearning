@@ -1,6 +1,6 @@
-##Learning Go structs is a great way to get familiar with how Go handles data types and organizes code. Structs in Go are used to group related data together, and they form the foundation for working with more complex data structures. To help you practice, I'll give you a series of progressively more challenging problems that will allow you to explore Go structs in various contexts.
+## Learning Go structs is a great way to get familiar with how Go handles data types and organizes code. Structs in Go are used to group related data together, and they form the foundation for working with more complex data structures. To help you practice, I'll give you a series of progressively more challenging problems that will allow you to explore Go structs in various contexts.
 
-###Challenge 1: Basic Struct Declaration and Initialization
+### Challenge 1: Basic Struct Declaration and Initialization
 Problem:
 
 Create a Person struct with the following fields:
@@ -19,7 +19,7 @@ Tips:
     Use the fmt.Println() function to print the struct.
     Experiment with both named and unnamed initialization styles.
 
-###Challenge 2: Method on a Struct
+### Challenge 2: Method on a Struct
 Problem:
 
 Create a Rectangle struct with the following fields:
@@ -37,7 +37,7 @@ Tips:
     Remember that methods are defined with a receiver type (e.g., func (r Rectangle) area() int { ... }).
     The area of a rectangle is calculated as width * height.
 
-###Challenge 3: Struct with Pointer Receivers
+### Challenge 3: Struct with Pointer Receivers
 Problem:
 
 Define a BankAccount struct with the following fields:
@@ -56,7 +56,7 @@ Tips:
     Use a pointer receiver for methods that modify the struct's fields.
     You’ll need to pass a pointer to the deposit method (e.g., &account).
 
-###Challenge 4: Struct with Nested Structs
+### Challenge 4: Struct with Nested Structs
 Problem:
 
 Create a Car struct with the following fields:
@@ -76,7 +76,7 @@ Tips:
     You can define nested structs inside another struct.
     Use dot notation to access nested fields, e.g., car.engine.horsepower.
 
-###Challenge 5: Struct with Tags and JSON Encoding/Decoding
+### Challenge 5: Struct with Tags and JSON Encoding/Decoding
 Problem:
 
 Define a User struct with the following fields:
@@ -97,7 +97,7 @@ Tips:
     Use the json package and the json.Marshal() and json.Unmarshal() functions.
     Use struct tags to specify how fields should appear in the JSON (e.g., json:"first_name").
 
-###Challenge 6: Struct with Slice of Structs
+### Challenge 6: Struct with Slice of Structs
 Problem:
 
 Create a Team struct with the following fields:
@@ -121,7 +121,7 @@ Tips:
     You can create a slice of structs like this: players := []Player{ ... }.
     Use a loop to iterate over the slice of players and print their details.
 
-###Challenge 7: Struct with Multiple Methods
+### Challenge 7: Struct with Multiple Methods
 Problem:
 
 Create a Book struct with the following fields:
@@ -145,7 +145,7 @@ Tips:
 
     For the applyDiscount() method, calculate the discount as: newPrice = price - (price * (discount / 100)).
 
-###Challenge 8: Compare Structs (Equality)
+### Challenge 8: Compare Structs (Equality)
 Problem:
 
 Create a Product struct with the following fields:
@@ -163,7 +163,7 @@ Tips:
 
     Go does not allow direct comparison of structs with slices or maps, but you can compare basic types directly (e.g., product1.name == product2.name).
 
-###Challenge 9: Sorting a Slice of Structs
+### Challenge 9: Sorting a Slice of Structs
 Problem:
 
 Create a Person struct with the following fields:
@@ -181,7 +181,7 @@ Tips:
 
     Implement the sort.Interface for your slice by defining Len(), Less(i, j int) bool, and Swap(i, j int) methods.
 
-###Challenge 10: Struct with Methods for Stringer Interface
+### Challenge 10: Struct with Methods for Stringer Interface
 Problem:
 
 Create a Product struct with the following fields:
