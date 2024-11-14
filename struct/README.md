@@ -163,40 +163,6 @@ Tips:
 
     Go does not allow direct comparison of structs with slices or maps, but you can compare basic types directly (e.g., product1.name == product2.name).
 
-### Challenge 9: Sorting a Slice of Structs
-Problem:
-
-Create a Person struct with the following fields:
-
-    name (string)
-    age (int)
-
-Write a function sortByAge(people []Person) that sorts a slice of Person structs by age in ascending order. Use the sort package to accomplish this. In the main function:
-
-    Create a slice of Person instances.
-    Call sortByAge() to sort the people.
-    Print the sorted list of people.
-
-Tips:
-
-    Implement the sort.Interface for your slice by defining Len(), Less(i, j int) bool, and Swap(i, j int) methods.
-
-### Challenge 10: Struct with Methods for Stringer Interface
-Problem:
-
-Create a Product struct with the following fields:
-
-    id (int)
-    name (string)
-    price (float64)
-
-Implement the fmt.Stringer interface for the Product struct by defining the String() method, which returns a string with the product's details in the format: ID: <id>, Name: <name>, Price: <price>.
-
-In the main function:
-
-    Create an instance of Product.
-    Print the product using fmt.Println().
-
 Tips:
 
     The fmt.Stringer interface is implemented by defining the String() method with the signature func (p Product) String() string.
