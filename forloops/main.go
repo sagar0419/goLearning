@@ -18,4 +18,5 @@ func main() {
 	arrayforloops.NewTwoDimensional()
 	arrayforloops.MatrixMultiply()
 	arrayforloops.StarPyramid()
+	arrayforloops.TransposeMatrix()
 }

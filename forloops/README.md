@@ -27,4 +27,6 @@
 
    13. Print a pyramid pattern of stars.
 
+   14. Write a program to find its transpose of a 2D matrix.
+
 Answers are in this file: [arrayFor.go](arrayForLoops/arrayFor.go)

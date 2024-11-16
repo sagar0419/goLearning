@@ -204,3 +204,29 @@ func StarPyramid() {
 		fmt.Println()
 	}
 }
+
+// Transpose a matrix
+
+func TransposeMatrix() {
+	arr := [2][3]int{
+		{1, 2, 3},
+		{4, 5, 6},
+	}
+	x := len(arr)
+	y := len(arr[0])
+	var a [3][2]int
+
+	fmt.Println("Matrix before transpose \n", arr)
+	for i := 0; i < x; i++ {
+		for j := 0; j < y; j++ {
+			a[j][i] = arr[i][j]
+		}
+	}
+	fmt.Println("\nMatrix After transpose ")
+	for k := 0; k < len(a); k++ {
+		for l := 0; l < len(a[k]); l++ {
+			fmt.Print(a[k][l], " ")
+		}
+		fmt.Println()
+	}
+}
