@@ -117,3 +117,90 @@ func ShiftZero() {
 	}
 	fmt.Println("After shifting", arr)
 }
+
+// Multiplication Table
+func MultiplyFor() {
+	a := 2
+	for i := 1; i <= 10; i++ {
+		fmt.Printf("%d * %d = %d\n", a, i, a*i)
+	}
+}
+
+// 2D Array Sum
+func TwoDimensional() {
+	arr := [2][3]int{
+		{1, 2, 3},
+		{4, 5, 6},
+	}
+	x := len(arr)
+	a := 0
+	for i := 0; i < x; i++ {
+		for j := 0; j < len(arr[i]); j++ {
+			a += arr[i][j]
+		}
+	}
+	fmt.Println("Sum of 2D array \n", a)
+}
+
+// 2D Array Sum
+func NewTwoDimensional() {
+	arr := [3][3]int{
+		{1, 2, 3},
+		{4, 5, 6},
+		{7, 8, 9},
+	}
+	x := len(arr)
+	a := 0
+	for i := 0; i < x; i++ {
+		for j := 0; j < len(arr[i]); j++ {
+			a += arr[i][j]
+		}
+	}
+	fmt.Println("Sum of new 2D array \n", a)
+}
+
+// matrix multiply
+
+func MatrixMultiply() {
+	a := [3][3]int{
+		{1, 2, 3},
+		{4, 5, 6},
+		{7, 8, 9},
+	}
+
+	b := [3][3]int{
+		{10, 11, 12},
+		{13, 14, 15},
+		{16, 17, 18},
+	}
+
+	x := len(a)
+	var result [3][3]int
+
+	for i := 0; i < x; i++ {
+		for j := 0; j < x-i-1; j++ {
+			for k := 0; k < x; k++ {
+				result[i][j] += a[i][k] * b[k][j]
+			}
+		}
+	}
+	fmt.Println("Multiplication result is ")
+	for i := 0; i < x; i++ {
+		fmt.Println(result[i])
+	}
+}
+
+// Star Pyramid
+
+func StarPyramid() {
+	rows := 5
+	for i := 1; i <= rows; i++ {
+		for j := 1; j <= rows-i; j++ {
+			fmt.Print(" ")
+		}
+		for k := 1; k <= 2*i-1; k++ {
+			fmt.Print("*")
+		}
+		fmt.Println()
+	}
+}

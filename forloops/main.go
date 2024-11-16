@@ -1,6 +1,8 @@
 package main
 
-import arrayforloops "github.com/sagar0419/goLearning/arrayForLoops"
+import (
+	arrayforloops "github.com/sagar0419/goLearning/arrayforloops"
+)
 
 func main() {
 	arrayforloops.MaxElement()
@@ -11,4 +13,9 @@ func main() {
 	arrayforloops.BubbleSort()
 	arrayforloops.StarPrint()
 	arrayforloops.ShiftZero()
+	arrayforloops.MultiplyFor()
+	arrayforloops.TwoDimensional()
+	arrayforloops.NewTwoDimensional()
+	arrayforloops.MatrixMultiply()
+	arrayforloops.StarPyramid()
 }
