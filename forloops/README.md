@@ -19,4 +19,4 @@ Questions with Array for Loops
 
    8. Shift Zeroes to End: Given an array with some elements as zero, write a function to shift all zeroes to the end of the array while maintaining the order of other elements. Use a single for loop.
 
-Answers are in this file: [arrayFor.go](arrayFor.go)
+Answers are in this file: [arrayFor.go](arrayForLoops/arrayFor.go)
