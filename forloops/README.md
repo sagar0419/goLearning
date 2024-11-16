@@ -29,4 +29,4 @@
 
    14. Write a program to find its transpose of a 2D matrix.
 
-Answers are in this file: [arrayFor.go](arrayForLoops/arrayFor.go)
+Answers are in this file: [arrayFor.go](arrayforloops/arrayFor.go)
