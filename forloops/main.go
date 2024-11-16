@@ -8,4 +8,7 @@ func main() {
 	arrayforloops.CountOccur()
 	arrayforloops.Average()
 	arrayforloops.Unique()
+	arrayforloops.BubbleSort()
+	arrayforloops.StarPrint()
+	arrayforloops.ShiftZero()
 }

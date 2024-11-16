@@ -72,3 +72,46 @@ func Unique() {
 		fmt.Println("No unique number in an array")
 	}
 }
+
+// Bubble sort
+
+func BubbleSort() {
+	arr := []int{9, 6, 11, 12, 6, 9, 6}
+
+	n := len(arr)
+
+	for i := 0; i <= n-1; i++ {
+		for j := 0; j < n-i-1; j++ {
+			if arr[j] > arr[j+1] {
+				arr[j], arr[j+1] = arr[j+1], arr[j]
+			}
+		}
+	}
+	fmt.Println(arr)
+}
+
+// Print stars
+
+func StarPrint() {
+	for i := 1; i <= 5; i++ {
+		for j := 1; j <= i; j++ {
+			fmt.Print("*")
+		}
+		fmt.Println()
+	}
+}
+
+// Shift Zeroes to End
+func ShiftZero() {
+	arr := []int{0, 6, 0, 12, 0, 9, 6}
+	x := len(arr)
+	fmt.Println("before shifting", arr)
+	for i := 0; i <= x-1; i++ {
+		for j := 0; j < x-i-1; j++ {
+			if arr[j] < arr[j+1] {
+				arr[j], arr[j+1] = arr[j+1], arr[j]
+			}
+		}
+	}
+	fmt.Println("After shifting", arr)
+}
