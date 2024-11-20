@@ -33,10 +33,12 @@
 
 15. **Employee Records:** Create a map where keys are employee IDs (int), and values are another map containing employee details (name, age, department). Write functions to:
 
-```    Add a new employee.
+```
+    Add a new employee.
     Update employee details.
     Retrieve details by ID.
-    Delete an employee by ID.```
+    Delete an employee by ID.
+```
 
 
 Answers are in this file: [mapsIn.go](mapsInGo/mapsIn.go)
