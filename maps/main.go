@@ -10,4 +10,9 @@ func main() {
 	mapsLearn.MapReverse()
 	mapsLearn.CharFrequency()
 	mapsLearn.SumValues()
+	mapsLearn.MergeMaps()
+	mapsLearn.KeyByValue()
+	mapsLearn.SentenceWordCount()
+	mapsLearn.DuplicateSlice()
+	mapsLearn.MapOfMaps()
 }
