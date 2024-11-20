@@ -70,3 +70,20 @@ func CharFrequency() {
 		fmt.Printf("The char is %q and its count is %d\n", char, count)
 	}
 }
+
+// Sum of values
+func SumValues() {
+	bill := map[string]int{
+		"Grocery": 100,
+		"Petrol":  2199,
+		"Movie":   956,
+	}
+	x := 0
+	fmt.Println("")
+	fmt.Println("Sum of values")
+	for key, value := range bill {
+		fmt.Printf("key is %s and value is %d\n", key, value)
+		x += value
+	}
+	fmt.Printf("the sum of all the values is %d\n", x)
+}

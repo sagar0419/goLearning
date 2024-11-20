@@ -9,4 +9,5 @@ func main() {
 	mapsLearn.KeyCheck()
 	mapsLearn.MapReverse()
 	mapsLearn.CharFrequency()
+	mapsLearn.SumValues()
 }
