@@ -16,4 +16,7 @@ func main() {
 	mapsLearn.DuplicateSlice()
 	mapsLearn.MapOfMaps()
 	mapsLearn.FlattenMap()
+	mapsLearn.SortingMap()
+	mapsLearn.MapJson()
+	mapsLearn.JsonParsing()
 }

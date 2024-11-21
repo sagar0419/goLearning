@@ -1,7 +1,9 @@
 package mapsingo
 
 import (
+	"encoding/json"
 	"fmt"
+	"log"
 	"strings"
 )
 
@@ -196,4 +198,77 @@ func FlattenMap() {
 		}
 	}
 	fmt.Println("new slice is ", x)
+}
+
+// Custom Sorting by Value
+func SortingMap() {
+	empBill := map[string]int{
+		"Grocery": 100,
+		"Petrol":  2199,
+		"Movie":   956,
+	}
+
+	fmt.Println("\nSorting Map")
+	keys := make([]string, 0, len(empBill))
+	for key := range empBill {
+		keys = append(keys, key)
+	}
+	for i := 0; i < len(empBill); i++ {
+		for j := i + 1; j < len(empBill); j++ {
+			if empBill[keys[i]] > empBill[keys[j]] {
+				keys[i], keys[j] = keys[j], keys[i]
+			}
+		}
+	}
+	for _, key := range keys {
+		fmt.Printf("%s:%d\n", key, empBill[key])
+	}
+}
+
+// Convert Map to JSON
+func MapJson() {
+	empBill := map[string]int{
+		"Grocery": 100,
+		"Petrol":  2199,
+		"Movie":   956,
+	}
+	fmt.Println("\nMap To Json")
+	emp, err := json.Marshal(empBill)
+	if err != nil {
+		log.Fatal(err)
+		return
+	}
+
+	fmt.Println(string(emp))
+}
+
+// Json Parsing
+func JsonParsing() {
+	jsonStr := `{
+		"employee": {
+			"name": "John Doe",
+			"age": 30,
+			"address": {
+				"city": "New York",
+				"zipcode": "10001"
+			},
+			"department": {
+				"name": "Engineering",
+				"id": 101
+			}
+		}
+	}`
+
+	fmt.Println("\nNested Map of Json parsing")
+	var empData map[string]map[string]interface{}
+	err := json.Unmarshal([]byte(jsonStr), &empData)
+	if err != nil {
+		log.Fatal(err)
+	}
+	worker := empData["employee"]
+	// Accessing values
+	address := worker["address"].(map[string]interface{})
+	fmt.Println("city: ", address["city"])
+	fmt.Println("Zipcode", address["zipcode"])
+
 }
