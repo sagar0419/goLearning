@@ -23,15 +23,16 @@
 
 10. **Map of Maps:** Write a program that uses a map of maps (e.g., map[string]map[string]int) to store and retrieve hierarchical data, like categories and subcategories.
 
-11. **Group by Length:** Write a function that takes a slice of strings and groups them by their lengths using a map, where the key is the length and the value is a slice of strings with that length.
+11. **Flatten a Map of Slices:** Given a map of map[string][]int, write a function to flatten it into a single slice containing all the integers.
 
-12. **Flatten a Map of Slices:** Given a map of map[string][]int, write a function to flatten it into a single slice containing all the integers.
+12. **Custom Sorting by Value:** Write a function that sorts a map of map[string]int by its values in descending order and returns the sorted keys in a slice.
 
-13. **Custom Sorting by Value:** Write a function that sorts a map of map[string]int by its values in descending order and returns the sorted keys in a slice.
+13. **Convert Map to JSON:** Write a program that takes a map and converts it into a JSON string using Go's encoding/json package.
 
-14. **Convert Map to JSON:** Write a program that takes a map and converts it into a JSON string using Go's encoding/json package.
+14. **Nested Maps for JSON Parsing:** Parse a JSON string into a map and access nested elements using a sequence of keys.
 
-15. **Employee Records:** Create a map where keys are employee IDs (int), and values are another map containing employee details (name, age, department). Write functions to:
+15. **Cache System with Map:** Implement a simple in-memory cache using a map. Add functionalities for setting a key-value pair, retrieving a value by key, and removing expired entries based on a given time-to-live (TTL).
+
 
 ```
     Add a new employee.

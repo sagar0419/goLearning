@@ -15,4 +15,5 @@ func main() {
 	mapsLearn.SentenceWordCount()
 	mapsLearn.DuplicateSlice()
 	mapsLearn.MapOfMaps()
+	mapsLearn.FlattenMap()
 }

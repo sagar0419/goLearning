@@ -179,3 +179,21 @@ func MapOfMaps() {
 		}
 	}
 }
+
+// Flatten a Map of Slices
+func FlattenMap() {
+	fmt.Println("\nFlatten a Map of Slices")
+	myMap := map[string][]int{
+		"group1": {1, 2, 3},
+		"group2": {4, 5},
+		"group3": {6, 7, 8, 9},
+	}
+	x := []int{}
+	for _, value := range myMap {
+		fmt.Println(value)
+		for _, v := range value {
+			x = append(x, v)
+		}
+	}
+	fmt.Println("new slice is ", x)
+}
