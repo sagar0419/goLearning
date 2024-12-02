@@ -14,3 +14,7 @@
 5. **Multiple Structs with One Interface** Define an interface Transport with methods Start() string and Stop() string.
     * Implement it for Car, Bike, and Bus structs.
     * Write a function that takes a slice of Transport and calls Start and Stop for each.
+6. **Empty Interface** Create a function Describe that accepts an interface{} (empty interface) and prints:
+    * The type of the input.
+    * The value of the input.
+    * Test with integers, strings, and custom structs.
