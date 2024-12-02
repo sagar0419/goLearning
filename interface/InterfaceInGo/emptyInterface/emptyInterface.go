@@ -23,4 +23,7 @@ func EmptyInterface() {
 		age:       99,
 	}
 	Describe(stru)
+
+	i := 45
+	Describe(i)
 }
