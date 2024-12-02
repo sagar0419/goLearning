@@ -1,7 +1,7 @@
 ## This repository showcases GoLang code I developed while actively practicing and honing my GoLang skills.
 
 
-### Questions with maps.
+### Maps Questions.
 
 1. **Word Frequency Counter:** Write a function that takes a string as input and returns a map where keys are words in the string, and values are the number of times each word appears.
 
