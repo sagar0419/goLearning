@@ -3,6 +3,7 @@ package main
 import (
 	animal "github.com/sagar0419/goLearning/InterfaceInGo/animal"
 	interfaceGo "github.com/sagar0419/goLearning/InterfaceInGo/interfaceBasic"
+	MultiStruct "github.com/sagar0419/goLearning/InterfaceInGo/multiStruct"
 	reuse "github.com/sagar0419/goLearning/InterfaceInGo/reusablePrinter"
 	simpleshape "github.com/sagar0419/goLearning/InterfaceInGo/simpleShape"
 )
@@ -13,4 +14,5 @@ func main() {
 	animal.AnimalSpealGreet()
 	simpleshape.ShapeInterface()
 	reuse.ReusablePrinter()
+	MultiStruct.MultiStruct()
 }
