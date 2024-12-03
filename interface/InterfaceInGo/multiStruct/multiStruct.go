@@ -18,29 +18,24 @@ type Bus struct {
 }
 
 func (c Car) Start() string {
-	x := fmt.Sprintf("the %s car has started", c.Name)
-	return x
+	return fmt.Sprintf("the %s car has started", c.Name)
 }
 func (b Bike) Start() string {
-	x := fmt.Sprintf("the %s Bike has started", b.Name)
-	return x
+	return fmt.Sprintf("the %s Bike has started", b.Name)
 }
 func (b Bus) Start() string {
-	x := fmt.Sprintf("the %s Bus has started", b.Name)
-	return x
+	return fmt.Sprintf("the %s Bus has started", b.Name)
+
 }
 
 func (c Car) Stop() string {
-	x := fmt.Sprintf("the %s Car has Stopped", c.Name)
-	return x
+	return fmt.Sprintf("the %s Car has Stopped", c.Name)
 }
 func (b Bike) Stop() string {
-	x := fmt.Sprintf("the %s Bike has Stopped", b.Name)
-	return x
+	return fmt.Sprintf("the %s Bike has Stopped", b.Name)
 }
 func (b Bus) Stop() string {
-	x := fmt.Sprintf("the %s Bus has Stopped", b.Name)
-	return x
+	return fmt.Sprintf("the %s Bus has Stopped", b.Name)
 }
 
 // Created a func that take slice of transport as input

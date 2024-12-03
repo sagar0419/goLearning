@@ -2,6 +2,7 @@ package main
 
 import (
 	animal "github.com/sagar0419/goLearning/InterfaceInGo/animal"
+	"github.com/sagar0419/goLearning/InterfaceInGo/embedded"
 	emptyinterface "github.com/sagar0419/goLearning/InterfaceInGo/emptyInterface"
 	interfaceGo "github.com/sagar0419/goLearning/InterfaceInGo/interfaceBasic"
 	MultiStruct "github.com/sagar0419/goLearning/InterfaceInGo/multiStruct"
@@ -17,4 +18,5 @@ func main() {
 	reuse.ReusablePrinter()
 	MultiStruct.MultiStruct()
 	emptyinterface.EmptyInterface()
+	embedded.AmphibianInterface()
 }
