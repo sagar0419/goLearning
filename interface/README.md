@@ -30,9 +30,13 @@
     * Test with integers, strings, and custom structs.
 
     *[solution](InterfaceInGo/emptyInterface)*
-7. **Embedded Interfaces**
-    * Define two interfaces Flyer (with Fly() string) and Swimmer (with Swim() string).
+7. **Embedded Interfaces** Define two interfaces Flyer (with Fly() string) and Swimmer (with Swim() string).
     * Create a combined interface Amphibian that embeds both.
     * Implement Amphibian for a Duck struct.
 
     *[solution](InterfaceInGo/embedded)*
+
+8. **Mock Testing with Interfaces** Define an interface Database with methods Save(data string) and Fetch() string.
+    * Implement Database for RealDatabase and MockDatabase.
+    * Write a function that uses the interface to interact with the database and test it with MockDatabase.
+    *[solution](InterfaceInGo/mockTest)*
